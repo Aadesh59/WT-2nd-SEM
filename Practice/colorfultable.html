@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTTONS</title>
+    <style>
+        th{
+            font-size: 15px;
+            font-weight: 550;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        
+        .hover1.hover1{
+            border-bottom: 3px solid #2e9786;
+        }
+        .hover2{
+            border-bottom: 3px solid #2e9786;
+        }
+        .hover3{
+            border-bottom: 3px solid rgb(164, 158, 184);
+        }
+        .hover4{
+            border-bottom: 3px solid rgb(192, 100, 63);
+        }
+        .hover5{
+            border-bottom: 3px solid #6ddac7;
+        }
+        
+
+        #plus{
+            font-size: 25px;
+            color: white;
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: rgb(86, 214, 176);
+        }
+
+        table{
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+          button{
+            width: 110px;
+            height: 40px;
+            font-size: 15px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 5px;
+            border-radius: 8px;
+            border: none;
+            border: 0px;
+            border-style: solid;
+            border-color: white;
+            font-weight: bold;
+            background-color: white;
+            
+          }
+          h1{
+            color: rgb(80, 80, 80);
+            margin-left: 350px;
+            font-size: 40px;
+          }
+          td:nth-child(5n+6){
+            background-color: #3cc4ad;
+            border: #3cc4ad;
+          }
+            
+          #textclr{
+            color: rgb(190, 190, 190);
+            font-size: 15px;
+          }
+          #orangee{
+            background-color: rgb(241, 125, 79);
+            color: white;
+          }
+          #greenn{
+            background-color: #3cc4ad ;
+            color: white;
+          }
+          #grayy{
+            background-color: gainsboro;
+            color: grey;
+          }
+          .press, .greenop1{
+            opacity: 0.7;
+          }
+          .disabled, .greenop2, .orangee22 ,.press22{
+            opacity: 0.5;
+          }
+
+          #greenop, #fcolorg{
+            color: #3cc4ad;
+          }
+          .bgclr{
+            background-color: #3cc4ad;
+            color: white;
+          }
+         .greenop{
+            color:#3cc4ad;
+         }
+
+
+          .press2{
+            color: white;
+            background-color: #3cc4ad ;
+            opacity: 0.7;
+          }
+          .orangee2{
+            color: white;
+            background-color: rgb(241, 125, 79);
+            opacity: 0.7;
+         }
+          .grayy2{
+            color: rgb(125, 118, 151);
+            background-color: gainsboro;
+            opacity: 0.7;
+            border-color: rgb(125, 118, 151);
+          }
+          .grayy22{
+            border-color: rgb(125, 118, 151);
+            opacity: 0.5;
+          }
+
+          .fcolorg{
+            border-color: #3cc4ad;
+            color: #3cc4ad;
+          }
+          .fcolorgb{
+            border-color: rgb(125, 118, 151);
+            color:rgb(125, 118, 151);
+          }
+          .fcoloro{
+            border-color: rgb(241, 125, 79);
+            color: rgb(241, 125, 79);
+          }
+
+
+          .secondary{
+            color: white;
+            opacity: 0.5;
+          }
+          .primary22{
+            color: white;
+          }
+          .greenop22{
+            
+            color: #3cc4ad;
+          }
+          #opacityy1{
+            opacity: 0.7;
+          }
+          #opacityy2{
+            opacity: 0.5;
+          }
+         
+          .brdrsz1{
+            border-width: 1px;
+          }
+          .brdrsz2{
+            border-width: 2px;
+          }
+
+    </style>
+</head>
+<body>
+    <h1>Buttons</h1>
+    <table border="0" cellpadding="10" cellspacing="0" align="center" width="50%">
+    <!--<table width="50%"> -->
+        <tr id="textclr">
+            <th width="10%"></th>
+            <th width="10%"></th>
+            <th>Primary</th>
+            <th>Secondary</th>
+            <th>Destructive</th>
+            <th>Primary</th>
+        </tr>
+        <tr>
+            <th id="textclr">Default</th>
+            <td><button id="plus">+</button></td>
+            <td><button id="greenn">Button</button></td>
+            <td><button id="grayy">Button</button></td>
+            <td><button id="orangee">Button</button></td>
+            <td><button id="greenop">Button</button></td>
+        </tr>
+        <tr>
+            <th id="textclr">Hover</th>
+            <td><button id="plus" class="hover1">+</button></td>
+            <td><button class="hover2" id="greenn">Button</button></td>
+            <td><button class="hover3" id="grayy">Button</button></td>
+            <td><button class="hover4" id="orangee">Button</button></td>
+            <td><button id="greenop" class="hover5">Button</button></td>
+        </tr>
+        <tr>
+            <th id="textclr">Press</th>
+            <td><button id="plus">+</button></td>
+            <td><button id="greenn" class="press">Button</button></td>
+            <td><button id="grayy" class="press">Button</button></td>
+            <td><button id="orangee" class="press">Button</button></td>
+            <td><button id="greenop" class="greenop1">Button</button></td>
+        </tr>
+        <tr>
+            <th id="textclr">Disabled</th>
+            <td><button id="plus">+</button></td>
+            <td><button id="greenn" class="disabled">Button</button></td>
+            <td><button id="grayy" class="disabled">Button</button></td>
+            <td><button id="orangee" class="disabled">Button</button></td>
+            <td><button id="greenop" class="greenop2">Button</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="primary22" style="border-color: #3cc4ad;"><span style="opacity: .5;">Secondary</span></td>
+        </tr>
+        <tr>
+            <th id="textclr">Default</th>
+            <td></td>
+            <td><button class="fcolorg brdrc brdrsz1" style="border-width: 1px;">Button</button></td>
+            <td><button class="fcolorgb brdrc brdrsz1">Button</button></td>
+            <td><button class="fcoloro brdrc brdrsz1">Button</button></td>
+            <td><button class="bgclr brdrsz1">Button</button></td>
+        </tr>
+        <tr>
+            <th id="textclr">Hover</th>
+            <td></td>
+            <td><button class="fcolorg brdrsz brdrsz2">Button</button></td>
+            <td><button class="fcolorgb brdrsz brdrsz2">Button</button></td>
+            <td><button class="fcoloro brdrsz brdrsz2">Button</button></td>
+            <td><button class="bgclr brdrsz2">Button</button></td>
+        </tr>
+        <tr>
+            <th id="textclr">Press</th>
+            <td></td>
+            <td><button class="press2 brdrc brdrsz1">Button</button></td>
+            <td><button class="fcolorgb grayy2 brdrc brdrsz1">Button</button></td>
+            <td><button class="orangee2 brdrsz1">Button</button></td>
+            <td><button class="greenop22 brdrsz1" id="opacityy1">Button</button></td>
+        </tr>
+        <tr>
+            <th id="textclr">Disabled</th>
+            <td></td>
+            <td><button class="fcolorg press22 brdrc brdrsz1">Button</button></td>
+            <td><button class="fcolorgb grayy22 brdrc brdrsz1">Button</button></td>
+            <td><button class="fcoloro orangee22 brdrsz1">Button</button></td>
+            <td><button id="opacityy2" class="bgclr brdrsz1" style="color: white;">Button</button></td>
+        </tr>
+    </table>
+</body>
+</html>
