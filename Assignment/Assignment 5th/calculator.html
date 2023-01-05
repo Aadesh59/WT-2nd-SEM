@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(163, 162, 162);
+            border: 1px solid gainsboro;
+            border-radius: 6px;
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 25px;
+            color: bisque;
+        }
+        .outline{
+            height: 490px;
+            width: 330px;
+            background-color: rgb(150, 162, 175);
+            border: 2px solid coral;
+            border-radius: 5px;
+            margin: 80px auto;
+            position: relative;
+        }
+        .display input{
+            margin: 10px 20px 10px 20px;
+            height: 60px;
+            width: 280px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            background-color: beige;
+            position: relative;
+            float: left;
+            font-size: 25px;
+        }
+        .equalll{
+            width: 122px;
+        }
+        .outline{
+            font-size: 25px;
+        }
+        .name{
+            text-align: center;
+            padding-top: 10px;
+            color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outline">
+        <div class="name">CALCULATOR</div>
+        <div class="display"><input type="text"></div>
+        <div class="butonn">
+            <button>ON</button>
+            <button>%</button>
+            <button>AC</button>
+            <button>*</button><br>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button><br>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button><br>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+            <button>.</button>
+            <button>0</button>
+            <button class="equalll">=</button>
+        </div>
+    </div>
+    <script>
+        let string = "";
+        let buttons = document.getElementsByTagName('button');
+        Array.from(buttons).forEach(function (button) {
+            button.addEventListener('click', function (btn) {
+                if (btn.target.innerHTML == '=') {
+
+                    string = eval(string);
+                    document.querySelector('input').value = string;
+                }
+                else if (btn.target.innerHTML == 'AC') {
+                    string = "";
+                    document.querySelector('input').value = string;
+                }
+                else if (btn.target.innerHTML == 'ON') {
+                    string = "";
+                    document.querySelector('input').value = string;
+                }
+                else {
+                    console.log(btn.target)
+                    string = string + btn.target.innerHTML;
+                    document.querySelector('input').value = string;
+                }
+
+            })
+        })
+    </script> 
+</body>
+</html>
