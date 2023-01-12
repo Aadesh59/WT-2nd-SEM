@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Given array is :</h2>
+    <p>23,84,21,-03,-71,53</p>
+    <button onclick="sortarray('asc')">ascending</button>
+    <button onclick="sortarray('descc')">descending</button>
+    <input type="text" id="sortt">
+    <script>
+        function sortarray(order){
+            var arr=[23,84,21,-03,-71,53];
+            if (order==='asc'){
+                arr.sort(function(a,b){
+                    return a-b
+                })
+            }else{
+                arr.sort(function(a,b){
+                    return b-a
+                })
+            }
+            console.log(arr)
+            document.getElementById("sortt").value=arr
+        }
+    </script>
+</body>
+</html>
