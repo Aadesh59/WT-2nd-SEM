@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Onload Page </title>
+	<style type="text/css">
+		.boxaa{
+            margin-left: 80px;
+            margin-top: 80px;
+			height: 200px;
+			width: 200px;
+            background-color: aqua;
+            border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+    <div class="boxaa" onload="loadbox()">This is loaded after clicking "ok".</div>
+<script>
+    window.onload = function(){
+        alert("Div is loaded.");
+    }
+</script>
+</body>
+</html>
