@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+h1{
+    color: coral;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.main{
+    background: rgba(218, 110, 102, 0.2);
+    /* padding: 50px; */  /* line 28*/
+    width: 300px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+}
+.main:hover{
+    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.login-box, .register-box{
+    padding: 20px; /* line 14*/
+}
+.form-group{
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #fff;
+    padding-left: 20px;
+    border-radius: 15px;
+    box-shadow: 0;
+}
+i{
+    margin-top: 10px;
+}
+.input-field{
+    width: 800px;
+    height: 35px;
+    border-radius: 15px;
+    border: 0;
+    padding-left: 10px;
+    outline: none;
+}
+.submit-field{
+    border:rgb(102, 150, 218);
+    border-radius: 15px;
+    color: #fff;
+    background-color: #3200a0;
+    padding: 10px;
+    width: 30%;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+}
+.login-link, .register-link{
+    margin-top: 10px;
+    color: wheat;
+}
+.login-tab, .register-tab{
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 16px;
+    text-decoration: none;
+}
+.active{
+    background: coral;
+}
+.signin,.signup{
+    text-decoration: none;
+    color: #2196f3;
+}
